@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Переключатель языков (Фиксированный) --- */
+.lang-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 6px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.lang-btn.active, .lang-btn:hover {
+    background-color: #25aae1;
+    color: #ffffff;
+}
+
+/* --- Кнопка «Наверх» --- */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: #25aae1;
+    color: white;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #1c8cba;
+    transform: translateY(-3px);
+}
+
+/* --- Header / Hero --- */
+.hero {
+    background: #111 url('img/main_bg.png') center/cover no-repeat;
+    padding: 40px 0 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo-text {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.main-title {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.orange-text { color: #f9bf3b; }
+.white-text { color: #ffffff; font-size: 38px; }
+
+.line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.line {
+    height: 2px;
+    width: 150px;
+    background-color: #ffffff;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto 30px;
+    font-weight: 300;
+}
+
+.orange-bold {
+    color: #f9bf3b;
+    font-weight: 700;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(0deg, #e37b00 0%, #ff9c00 100%);
+    color: #fff;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 0 #b36100;
+    transition: transform 0.1s;
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #b36100;
+}
+
+.down-arrow {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.more-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* --- Section 2: Waiting --- */
+.waiting {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.dark-title {
+    color: #252525;
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.divider {
+    width: 200px;
+    height: 4px;
+    background-color: #f9bf3b;
+    margin: 15px auto 20px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+}
+
+.waiting-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.waiting-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.waiting-text {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/* --- Section 3: Optimization (Белая секция, девушка слева) --- */
+.optimization {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.optimization-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.optimization-image {
+    flex: 1;
+    max-width: 480px;
+}
+
+.optimization-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.optimization-content {
+    flex: 1.2;
+}
+
+.optimization-title {
+    color: #25aae1;
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.optimization-text {
+    color: #4a4a4a;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.optimization-bold {
+    font-weight: 700;
+    color: #252525;
+}
+
+/* --- Section 4: Finish --- */
+.finish {
+    padding: 60px 0;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.finish-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.finish-item {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-icon {
+    width: 115px;
+    height: 115px;
+    background-color: #0b0b0b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.finish-text {
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 1.4;
+}
+
+/* --- Section 5: Prizes --- */
+.prizes {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.gift-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.prizes-text {
+    max-width: 800px;
+    font-size: 16px;
+    color: #252525;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.btn-large {
+    padding: 20px 45px;
+    font-size: 18px;
+}
+
+.date-block {
+    margin-top: 50px;
+}
+
+.date-title { font-size: 20px; font-weight: 700; color: #252525; }
+.date-highlight { font-size: 24px; font-weight: 900; color: #25aae1; margin: 10px 0; }
+.date-subtitle { font-size: 14px; color: #4a4a4a; }
+
+/* --- Footer --- */
+.footer {
+    background-color: #1a1a1a;
+    padding: 30px 0;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: underline;
+    margin: 0 5px;
+}
+
+.footer-copy { margin-top: 10px; }
+
+/* Адаптив для экранов */
+@media (max-width: 868px) {
+    .waiting-grid, .optimization-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .optimization-container {
+        flex-direction: column-reverse;
+    }
+}

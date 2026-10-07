@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORDPRESS ИНТЕНСИВ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Переключатель языков -->
+    <div class="lang-switch">
+        <button class="lang-btn active" data-lang-btn="ru">RU</button>
+        <button class="lang-btn" data-lang-btn="en">EN</button>
+        <button class="lang-btn" data-lang-btn="kk">KK</button>
+    </div>
+
+    <!-- СЕКЦИЯ 1: ГЛАВНЫЙ БАННЕР -->
+    <header class="hero">
+        <div class="container">
+            <div class="logo-block">
+                <img src="img/logo.svg" alt="WordPress Logo" class="logo-img">
+                <div class="logo-text" data-key="logo_text">WORDPRESS ИНТЕНСИВ</div>
+            </div>
+
+            <h1 class="main-title">
+                <span class="orange-text" data-key="title_1">СОЗДАТЬ СВОЙ САЙТ НА WORDPRESS</span>
+                <div class="line-text">
+                    <span class="line"></span>
+                    <span class="white-text" data-key="title_2">ЭТО ПРОСТО!</span>
+                    <span class="line"></span>
+                </div>
+                <span class="orange-text" data-key="title_3">КУДА СЛОЖНЕЕ СДЕЛАТЬ ЭТО ПРАВИЛЬНО!</span>
+            </h1>
+
+            <p class="description" data-key="desc">
+                Ежедневно в России появляется более 5 000 новых сайтов.<br>
+                И только единицы из них становятся популярными и приносят ощутимую прибыль. В чем секрет? В чем формула успеха? Узнайте на предстоящем двухдневном <span class="orange-bold">БЕСПЛАТНОМ</span> интенсиве!
+            </p>
+
+            <a href="#register" class="btn" data-key="btn_register">ЗАПИСАТЬСЯ НА ИНТЕНСИВ!</a>
+
+            <div class="down-arrow">
+                <a href="#about" class="more-link" data-key="more_link">УЗНАТЬ БОЛЬШЕ ОБ ИНТЕНСИВЕ</a>
+                <a href="#about" class="arrow-icon">
+                    <img src="img/down.svg" alt="Стрелка вниз" class="arrow-img">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- СЕКЦИЯ 2: ЧТО ВАС ЖДЕТ -->
+    <section class="waiting" id="about">
+        <div class="container">
+            <h2 class="section-title dark-title" data-key="waiting_title">ЧТО ВАС ЖДЕТ В НАШЕМ ИНТЕНСИВЕ?</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle" data-key="waiting_subtitle">2 бесплатных полноценных обучающих вебинара, где:</p>
+
+            <div class="waiting-grid">
+                <div class="waiting-item">
+                    <div class="waiting-icon-wrapper">
+                        <img src="img/waiting_1.png" alt="Иконка 1" class="waiting-icon">
+                    </div>
+                    <p class="waiting-text" data-key="waiting_item_1">
+                        Всего за 2 дня вы узнаете всю базовую информацию о верстке, настройках и продвижении вашего собственного сайта на WordPress!
+                    </p>
+                </div>
+
+                <div class="waiting-item">
+                    <div class="waiting-icon-wrapper">
+                        <img src="img/waiting_2.png" alt="Иконка 2" class="waiting-icon">
+                    </div>
+                    <p class="waiting-text" data-key="waiting_item_2">
+                        Создадите свой сайт и сделаете его привлекательным для поисковых систем (SEO), настроив базовые параметры индексации.
+                    </p>
+                </div>
+
+                <div class="waiting-item">
+                    <div class="waiting-icon-wrapper">
+                        <img src="img/waiting_3.png" alt="Иконка 3" class="waiting-icon">
+                    </div>
+                    <p class="waiting-text" data-key="waiting_item_3">
+                        Получите пошаговый алгоритм, как обойти конкурентов и обеспечить стабильный прирост новых посетителей и клиентов!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ 3: ОПТИМИЗАЦИЯ (ИЗМЕНЕНА ПО ВТОРОМУ ФОТО) -->
+    <section class="optimization">
+        <div class="container optimization-container">
+            <div class="optimization-image">
+                <img src="img/woman_bg.png" alt="Оптимизация сайтов">
+            </div>
+
+            <div class="optimization-content">
+                <h2 class="optimization-title" data-key="opt_title">ЧТО ТАКОЕ ОПТИМИЗАЦИЯ И ЗАЧЕМ ОНА НУЖНА?</h2>
+                
+                <p class="optimization-text" data-key="opt_text_1">
+                    На просторах интернета несчетное количество действующих и даже заброшенных сайтов. Большинство из них совпадает не только по категориям, но и по содержанию.
+                </p>
+                
+                <p class="optimization-text" data-key="opt_text_2">
+                    Представьте себе тысячи сайтов, на которых тем или иным образом предоставляется одна и та же информация или продается одна и та же услуга. И попасть на эти сайты можно лишь по тематическим запросам в поисковых системах.
+                </p>
+                
+                <p class="optimization-text" data-key="opt_text_3">
+                    Но как вам быть, если ваш сайт похож на сотню или тысячу таких же, а на одной странице гугла или яндекса всего 10 позиций? Как привести посетителей страницы своего ресурса?<br>
+                    Именно для этого и нужна оптимизация — для вывода вашего сайта на первую страницу поиска!
+                </p>
+                
+                <p class="optimization-text optimization-bold" data-key="opt_text_4">
+                    Мы научим вас, как сделать ваш сайт привлекательным для поисковых систем и посоветуем, как вывести его на первые страницы, обходя всех конкурентов.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ 4: ПО ОКОНЧАНИИ ОБУЧЕНИЯ -->
+    <section class="finish">
+        <div class="container">
+            <h2 class="section-title dark-title" data-key="finish_title">ПО ОКОНЧАНИИ ОБУЧЕНИЯ ВЫ СМОЖЕТЕ!</h2>
+            <div class="divider"></div>
+
+            <div class="finish-grid">
+                <div class="finish-item">
+                    <div class="circle-icon">
+                        <img src="img/finish_icon_1.png" alt="Иконка">
+                    </div>
+                    <p class="finish-text" data-key="finish_1">Создать свой сайт или блог</p>
+                </div>
+
+                <div class="finish-item">
+                    <div class="circle-icon">
+                        <img src="img/finish_icon_2.png" alt="Иконка">
+                    </div>
+                    <p class="finish-text" data-key="finish_2">Правильно оптимизировать свой сайт на WordPress</p>
+                </div>
+
+                <div class="finish-item">
+                    <div class="circle-icon">
+                        <img src="img/finish_icon_3.png" alt="Иконка">
+                    </div>
+                    <p class="finish-text" data-key="finish_3">Обеспечить ему постоянный, но верный рост позиции в ТОП</p>
+                </div>
+
+                <div class="finish-item">
+                    <div class="circle-icon">
+                        <img src="img/finish_icon_4.png" alt="Иконка">
+                    </div>
+                    <p class="finish-text" data-key="finish_4">Достигнуть стабильного прироста посетителей и целевых клиентов</p>
+                </div>
+
+                <div class="finish-item">
+                    <div class="circle-icon">
+                        <img src="img/finish_icon_5.png" alt="Иконка">
+                    </div>
+                    <p class="finish-text" data-key="finish_5">Получать ощутимую постоянную прибыль от своего проекта</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦИЯ 5: БОНУСЫ И ДАТА -->
+    <section class="prizes" id="register">
+        <div class="container">
+            <div class="gift-block">
+                <img src="img/gift.png" alt="Подарки и бонусы" class="gift-icon">
+                <p class="prizes-text" data-key="gift_text">
+                    Для всех участников интенсива предусмотрены бонусы и подарки. Нажимайте на кнопку ниже, принимайте участие в вебинарах и забирайте свой приз по окончании обучения!
+                </p>
+            </div>
+
+            <a href="#" class="btn btn-large" data-key="btn_register">ЗАПИСАТЬСЯ НА ИНТЕНСИВ!</a>
+
+            <div class="date-block">
+                <img src="img/first.png" alt="Вебинар" class="webinar-img">
+                <p class="date-title" data-key="date_title">ПЕРВЫЙ ВЕБИНАР СОСТОИТСЯ:</p>
+                <p class="date-highlight" data-key="date_highlight">10 СЕНТЯБРЯ В 20:00 ПО МОСКВЕ</p>
+                <p class="date-subtitle" data-key="date_subtitle">Успейте записаться, количество мест ограничено!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-links">
+                <a href="#" data-key="footer_support">Служба поддержки</a> | <a href="#" data-key="footer_privacy">Политика конфиденциальности</a>
+            </p>
+            <p class="footer-copy" data-key="footer_call">Позвоните нам: 8-800-000-00-00</p>
+        </div>
+    </footer>
+
+    <!-- Кнопка «Наверх» -->
+    <button id="scrollTopBtn" title="Наверх">&#8593;</button>
+
+    <!-- Подключение JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
